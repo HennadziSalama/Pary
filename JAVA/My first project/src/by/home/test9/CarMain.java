@@ -8,7 +8,11 @@ public class CarMain {
 		Car c=new Car();
 		Car c1=new Car(200);
 		Car c2=new Car(300,500);
-
+		
+		c.setMaxSpeed(230);
+		System.out.println(c.getMaxSpeed());
+		
+		
 	}
 
 }
