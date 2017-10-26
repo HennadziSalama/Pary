@@ -1,7 +1,9 @@
 package by.home.test9;
 
 public class Animal {
-	private String name="Pet";
+	
+	protected String name="Pet";
+	
 	public String getName() {
 		return name;
 	}
@@ -34,7 +36,7 @@ public class Animal {
 		
 		System.out.println("Может ходить");
 	} 
-	public void speak () {
+	public final void speak () {
 		
 		System.out.println("Может издавать звуки");
 	} 

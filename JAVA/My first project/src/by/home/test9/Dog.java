@@ -5,6 +5,11 @@ private int countCatchLayer;
 	
 	public void catchLayer(){
 		System.out.println("ловлю воров");
+		
 	}
+	public void speak () {
+			
+		System.out.println("GAFGAF");
 
+		}
 }
