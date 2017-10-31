@@ -1,8 +1,10 @@
 package by.home.test11;
 
-public class Converter {
+public class Converter implements IConverter{
 
-	public static double  fromCarrencyToUSD(double summa, Carrency cur){
+	IConverter iConv = new Converter();
+	
+	public double  fromCarrencyToUSD(double summa, Carrency cur){
 		if (cur==Carrency.BLR){
 			return summa/2;
 		}
@@ -18,7 +20,7 @@ public class Converter {
 		return 0;
 	}
 
-	public static double  fromUSDToCarrency(double summa, Carrency cur){
+	public double  fromUSDToCarrency(double summa, Carrency cur){
 		if (cur==Carrency.BLR){
 			return summa*2;
 		}
@@ -34,9 +36,8 @@ public class Converter {
 		return 0;
 	}
 
-	public static double  fromCarrencyToCarrency(double summa, Carrency from, Carrency to){
+	public double  fromCarrencyToCarrency(double summa, Carrency from, Carrency to){
 		double summaInUSD=fromCarrencyToUSD(summa,from);
 		return fromUSDToCarrency(summaInUSD,to);
 	}
-	
 }
