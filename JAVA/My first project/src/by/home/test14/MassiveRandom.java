@@ -12,6 +12,7 @@ public class MassiveRandom {
 		for (int i=0, ran.size()<10, i++){
 			ran.add(r.nextInt(15));
 		}
+		
 		Integer [] array=ran.toArray(new Integer[random.size()]);
 		
 		for (Integer i:array){
