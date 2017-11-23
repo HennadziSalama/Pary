@@ -7,6 +7,4 @@ public interface IConverter {
 	public double fromUSDToCarrency(double summa, Carrency cur);
 
 	public double fromCarrencyToCarrency(double summa, Carrency from, Carrency to);
-	
-
 }

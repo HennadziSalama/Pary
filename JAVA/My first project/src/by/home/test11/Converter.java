@@ -2,8 +2,6 @@ package by.home.test11;
 
 public class Converter implements IConverter{
 
-	IConverter iConv = new Converter();
-	
 	public double  fromCarrencyToUSD(double summa, Carrency cur){
 		if (cur==Carrency.BLR){
 			return summa/2;
@@ -35,7 +33,6 @@ public class Converter implements IConverter{
 		}
 		return 0;
 	}
-
 	public double  fromCarrencyToCarrency(double summa, Carrency from, Carrency to){
 		double summaInUSD=fromCarrencyToUSD(summa,from);
 		return fromUSDToCarrency(summaInUSD,to);

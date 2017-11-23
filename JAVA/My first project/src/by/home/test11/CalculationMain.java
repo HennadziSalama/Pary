@@ -8,5 +8,4 @@ public class CalculationMain {
 		ICalculation iCalc1 = new CalculationToImplements();
 		System.out.println(iCalc1.summa(5, 6));
 	}
-
 }

@@ -11,5 +11,4 @@ public class CalculationToImplements implements ICalculation{
 	public int raznost(int a, int b) {
 		return (a-b)*2;
 	}
-
 }
